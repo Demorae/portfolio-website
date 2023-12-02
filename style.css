@@ -1,24 +1,130 @@
+/* Reset default margin and padding for the entire page */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin-right: 2%;
 }
 
-nav ul li {
-    margin-right: 20px;
+nav li {
+    margin: 0 20px;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e42828; /* Change color on hover */
+}
+
+/* Main content section styling */
 #main-content {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2.about {
+    color: #e42828;
+
+}
+
+h2.projects {
+    color: #e42828;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 50;
+    height: 50%;
+}
+/* Project card styling */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-card h3 {
+    margin: 15px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+div.intro {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.skills {
+    text-align: center;
+    color: #e42828;
+}
+
+.icon-container {
+    display: flex; /* Display icons in a row */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    height: 10vh; /* Make the container full height of the viewport */
+    background-color: white; /* Background color for the container */
+    text-align: center;
+}
+
+/* Style the individual icons */
+.icon-container img {
+    width: 40px; /* Set the width of each icon */
+    height: 40px; /* Set the height of each icon */
+    margin: 0 10px; /* Add margin between icons */
 }
