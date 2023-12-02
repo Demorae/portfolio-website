@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Your Name - Portfolio</title>
+    
+    <title>Demorae - Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Demorae Davis</h1>
+        <h2>Projects</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,9 +22,38 @@
     </header>
     
     <section id="main-content">
-        <!-- Your main content goes here -->
+        <div class="projects-container">
+            <h1>My Projects</h1>
+    
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Project Slides -->
+                    <div class="swiper-slide">
+                        <img src="media/images/Kid Sage.JPG" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="media/images/Mother Nature.JPG" alt="Project 2">
+                        <h3>Project 2</h3>
+                        <p>Description of Project 2.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="media/images/IMG_1306.JPG" alt="Project 3">
+                        <h3>Project 3</h3>
+                        <p>Description of Project 3.</p>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
     </section>
-
+    <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
