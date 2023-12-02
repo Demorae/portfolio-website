@@ -55,9 +55,13 @@ nav a:hover {
     justify-content: space-between;
 }
 
+.intro {
+margin-right: 14%;
+padding-bottom: 60px;
+}
 h2.about {
     color: #e42828;
-
+    margin-top: 20%;
 }
 
 h2.projects {
@@ -66,10 +70,7 @@ h2.projects {
     justify-content: center;
 }
 
-video {
-    width: 50;
-    height: 50%;
-}
+
 /* Project card styling */
 .project-card {
     border: 1px solid #ddd;
@@ -85,13 +86,17 @@ video {
 }
 
 .project-card img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-bottom: 1px solid #ddd;
 }
 
 .project-card h3 {
     margin: 15px 0;
+}
+
+.cards {
+    display: flex;
 }
 
 /* Footer styling */
@@ -127,4 +132,55 @@ div.intro {
     width: 40px; /* Set the width of each icon */
     height: 40px; /* Set the height of each icon */
     margin: 0 10px; /* Add margin between icons */
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.icon-link img {
+    width: 50px; /* Adjust the size of your icon */
+    height: 50px; /* Adjust the size of your icon */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Optional: Add a smooth transition effect */
+
+}
+
+.icon-link:hover img {
+    transform: scale(1.2); /* Optional: Add a scale effect on hover */
 }
